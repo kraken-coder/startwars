@@ -1,12 +1,11 @@
 import React from 'react'
 import Styled from 'styled-components'
 
+// importing @ material UI components
+
 // Importing Components
-
-import ShowCase from '../../components/showCase/ShowCase'
-import Grid from '../../components/grid/Grid'
-import Search from '../../components/Search'
-
+import Search from '../../components/Search/Search'
+import Characters from '../../components/Character/Characters'
 // Background image
 // import background from '../../assets/background.jpg'
 
@@ -15,27 +14,18 @@ const Home = () => {
     <>
       <Wrapper>
         <Search />
-        <Content>
-          <ShowCase />
-          <Grid grid="primary">
-            <div>1</div>
-            <div>1</div>
-            <div>1</div>
-          </Grid>
-        </Content>
+        <Characters />
       </Wrapper>
     </>
   )
 }
 
 const Wrapper = Styled.div`
-height: 100vh;
+max-width: 1100px;
+margin: auto;
+overflow: hidden;
+padding: 0 2rem;
 
-`
-
-const Content = Styled.div`
-width: 80%;
-margin: auto ;
 `
 
 export default Home
