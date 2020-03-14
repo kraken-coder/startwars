@@ -1,7 +1,7 @@
 import React from 'react'
 
 //  importing mateerual UI components
-import Appbar from '@material-ui/core/Appbar'
+import Appbar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 //  Importing Supporting Components

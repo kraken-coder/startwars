@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import React, { useReducer, useEffect } from 'react'
 import axios from 'axios'
 
@@ -17,6 +18,7 @@ const AppState = props => {
   //  destructuring data
   const [state, dispatch] = useReducer(AppReducers, initialState)
   const { people, loading, character, charLoading, filterString } = state
+  // eslint-disable-next-line react/prop-types
   const { children } = props
   //  Set Loading
   const setLoading = () => dispatch({ type: SET_LOADING })
@@ -35,6 +37,7 @@ const AppState = props => {
             response
               .json()
               .then(data => {
+                // eslint-disable-next-line no-param-reassign
                 characters = characters.concat(data.results)
 
                 if (data.next) {
@@ -61,6 +64,7 @@ const AppState = props => {
         })
         setLoading()
       })
+      // eslint-disable-next-line no-console
       .catch(console.error)
   }, [])
 

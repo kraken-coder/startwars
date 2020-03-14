@@ -1,4 +1,4 @@
-const styles = theme => ({
+const styles = () => ({
   root: {
     margin: '30px 0',
     padding: '30px 20px 50px 20px',

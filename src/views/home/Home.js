@@ -9,16 +9,14 @@ import Characters from '../../components/Character/Characters'
 // Background image
 // import background from '../../assets/background.jpg'
 
-const Home = () => {
-  return (
-    <>
-      <Wrapper>
-        <Search />
-        <Characters />
-      </Wrapper>
-    </>
-  )
-}
+const Home = () => (
+  <>
+    <Wrapper>
+      <Search />
+      <Characters />
+    </Wrapper>
+  </>
+)
 
 const Wrapper = Styled.div`
 max-width: 1100px;

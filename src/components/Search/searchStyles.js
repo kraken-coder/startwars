@@ -26,7 +26,6 @@ const styles = theme => ({
     margin: '0',
     [theme.breakpoints.down('md')]: {},
   },
-  
 })
 
 export default styles

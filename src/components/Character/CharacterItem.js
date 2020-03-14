@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PropTypes from 'prop-types'
 
 //  importing material UI core compoents
 import Card from '@material-ui/core/Card'
@@ -59,9 +59,6 @@ const CharacterItem = ({ index, details: { name, vehicles, starships, films } })
       </CardAction>
     </Card>
   )
-}
-CharacterItem.PropTypes = {
-  details: PropTypes.array.isRequired,
 }
 
 export default CharacterItem
