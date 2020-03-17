@@ -20,10 +20,13 @@ const Character = ({
 }) => {
   const state = useContext(AppContext)
   const { getSingleCharacter, character, charLoading } = state
+  // eslint-disable-next-line radix
+  const id = parseInt(peopleid)
+  console.log(id + 1)
 
   //  Get single Character based om the index
   useEffect(() => {
-    getSingleCharacter(`https://swapi.co/api/people/${peopleid}`)
+    getSingleCharacter(`https://swapi.co/api/people/${id + 1}`)
   }, [])
 
   //  go back to the home page
